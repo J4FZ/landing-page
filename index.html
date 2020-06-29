@@ -1,69 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
-<title>James Frazer</title>
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-<link href="./fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="./fontawesome/css/brands.css" rel="stylesheet">
-  <link href="./fontawesome/css/solid.css" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="./img/favicon.png" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<title>James Frazer</title>
+	<meta charset="utf-8">
+	<meta name='viewport' content='viewport-fit=cover, initial-scale=1, maximum-scale=1'><!--, user-scalable=no-->
+	<link rel="stylesheet" href="./style.css">
+	<link rel="shortcut icon" href="./img/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> <!--font-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-	<a class="navbar-brand" title="JF"><object data="./img/logo-svg.svg" type="image/svg+xml">
-  <img src="./img/navlogo.png" />
-</object>
-	</a>
-    </div>
-    <ul id="list" class="nav navbar-nav navbar-right">
-      <li><a id="aboutmelink" class="link" href="#">About Me</a></li>
-      <li><a id="portfoliolink" class="link" href="#">Portfolio</a></li>
-    </ul>
-  </div>
-</nav>
-<!-- animation area-->
-<section>
-<canvas id="animation" class="spinner"></canvas>
-</section>
-<!-- about me area-->
-<div id="aboutme" class="aboutme-area col-sm-12">
-<h1>About Me</h1>
-<h3>To Do List:</h3>
-<p>[1] 'JF' to 'James Frazer' animation - 2 hours</p>
-<p>[2] Make site fully work with chrome on iOS (whitespace [almost done], view [done], smooth sroll-to) - 30 minutes</p>
-<p>[3] Make site fully work with safari on iOS (nav and footer animations) - 2 hours</p>
-<p>[4] Design and fill 'about me' and 'portfolio' areas - 3.5 hours</p>
+	<nav class="nav zone">
+		<ul class="main-nav">
+			<li><a class="link" href="javascript:goToByScroll('aboutme')">About Me</a></li>
+			<li><a class="link" href="javascript:goToByScroll('myportfolio')">My Portfolio</a></li>
+		</ul>
+	</nav>
+		
+	<div class="container zone">
+			<canvas id="particles">
+		</canvas>
+		<div class="desc">
+		<ul class="thd"> 
+    <li>
+      <a href="http://github.com/J4FZ/" target="_blank" title="My GitHub">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="fa fa-github"></span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/jayfrayz/" target="_blank" title="My LinkedIn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="fa fa-linkedin"></span>
+      </a> 
+    </li>
+    <li>
+      <a href="./files/JamesFrazerCV.pdf" download target="_blank" title="My CV (will be added)">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="fa fa-file-text"></span>
+      </a> 
+    </li>
+  </ul>  
+	</div>	
+<div class="arrow">
+	<p>See some of my info below</p>
+	<div class="bounce">
+  <span class="fa fa-arrow-down fa-2x"></span>
 </div>
-
-<!-- portfolio area -->
-<div class="portfolio-area col-sm-12">
-<h1 id="portfolio">Portfolio</h1>
-<h3>Under Construction</h3>
-<div class="portfolio-content">
-<a href="#"><img src="./img/yo.jpg"></a>
-<a href="#"><img src="./img/yo.jpg"></a>
-<a href="#"><img src="./img/yo.jpg"></a>
 </div>
+	</div>
+	<div>
+		<h3 class="text-center">About me</h3>
+	<div id="aboutme" class="aboutme zone fade-in">
+		<div>
+			<img class="myImage" src="./img/me.jpg">
+		</div>
 
-</div>
+<div>	
+	<p>Hi, my name is James Frazer. I'm a 23 year old computer science graduate currently living in Edinburgh, Scotland.</p>
 
-<footer>
-<ul>
-  <li><a id="githublink" href="#" title="My Github" target="_blank"><i class="fab fa-github"></i></a></li>
-  <li><a id="linkedinlink" href="#" title="My LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-  <li><a id="cvlink" href="#" download title="My CV"><i class="fas fa-file-pdf"></i></a></li>
-</ul>
-</footer>
+	<p>I studied BSc Computing at Abertay University from August 2016 - November 2019, graduating with a 2:1 degree with honours in the subject.</p>
+	<p>After a short break after graduating I have been working at The Turing Trust as an IT volunteer (since March 2020). The Turing Trust are a charity who support African countries by providing computer hardware to aid in education.</p>
+	<p>I am due to start studying MSc Advanced Security and Digital Forensics at Napier University in January 2021.</p>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- Bootstrap JQuery -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> <!-- Bootstrap Javascript -->
-<script src="./scripts/particlesdelay.js"></script>
+	<p class="p-end">Thanks for checking out my site! If you'd like to get in contact you can find links to my GitHub, LinkedIn and CV using the buttons above; alternatively you can find my email address at the bottom of the page.</p>
+			</div>
+
+		</div>
+	</div>
+	<div id="myportfolio" class="portfolio zone">
+		<h3 class="text-center">My Portfolio</h3>
+			<div class="portfolio-grid-wrapper">
+			<div class="box zone zoom"><a href="https://github.com/J4FZ/Text-Mining--Dissertation" target="_blank"><h3>Twitter Text Mining (Dissertation Project)</h3><img src="./img/portfolio-1.jpg" alt="Portfolio 1"></a></div>
+			<div class="box zone zoom"><a href="https://github.com/J4FZ/CMP304-AI-Human-Emotion-Recognition" target="blank_"><h3>Human Emotion Recognition (Artificial Intelligence)</h3><img src="./img/portfolio-2.jpg" alt="Portfolio 2"></a></div>
+			<div class="box zone zoom"><a href="#" target="_blank"><h3>SmartBrain (No link yet, in progress)</h3><img src="./img/portfolio-3.jpg" alt="Portfolio 3"></a></div>
+			<div class="box zone zoom"><a href="#" target="_blank"><h3>BlackJack (JS, No link yet, in progress)</h3><img src="./img/portfolio-4.jpg" alt="Portfolio 4"></a></div>
+			<div class="box zone zoom"><a href="https://github.com/J4FZ/Blackjack" target="_blank"><h3>Example Portfolio Item 5</h3><img src="./img/sky-bg.jpg" alt="Portfolio 5"></a></div>
+			<div class="box zone zoom"><a href="https://github.com/J4FZ/Blackjack" target="_blank"><h3>Example Portfolio Item 6</h3><img src="./img/sky-bg.jpg" alt="Portfolio 6"></a></div>
+			<div class="box zone zoom"><a href="https://github.com/J4FZ/Blackjack" target="_blank"><h3>Example Portfolio Item 7</h3><img src="./img/sky-bg.jpg" alt="Portfolio 7"></a></div>
+			<div class="box zone zoom"><a href="https://github.com/J4FZ/Blackjack" target="_blank"><h3>Example Portfolio Item 8</h3><img src="./img/sky-bg.jpg" alt="Portfolio 8"></a></div>
+		</div>
+	</div>
+	
+	<footer class="zone">
+		<h3 class="text-center">To-Do</h3>
+		<p>Make fully mobile friendly</p>
+		<p>Finish 'About Me'</p>
+		<p>Add CV file</p>
+		<p>Add/Edit animations</p>
+		<p>Redesign and add to 'Portfolio'</p>
+
+		<p class="text-center">Designed by James Frazer - <a href="mailto:jamesfrazeryt@gmail.com">jamesfrazeryt@gmail.com</a></p>
+	</footer>
+<script type="text/javascript" src="./script/fadescroll.js"></script>
+<script type="text/javascript" src="./script/particles.js"></script>
+<script src="https://kit.fontawesome.com/26534dd4d2.js" crossorigin="anonymous"></script> <!-- font awesome (button icons)-->
 </body>
 </html>
