@@ -270,3 +270,7 @@ canvas.addEventListener('mousemove', function(e){
     mouse_ball.y = e.pageY;
     // console.log(mouse_ball);
 });
+
+const goToByScroll = (id) => {
+    $('html,body').animate({scrollTop: $("#"+id).offset().top},'normal');
+}
