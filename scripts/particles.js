@@ -191,7 +191,7 @@ function getDisOf(b1, b2){
     return Math.sqrt(delta_x*delta_x + delta_y*delta_y);
 }
 
-// add balls if there a little balls
+// add balls if there arent enough
 function addBallIfy(){
     if(balls.length < 30){
         balls.push(getRandomBall());
@@ -242,7 +242,7 @@ window.addEventListener('resize', function(e){
 
 function goMovie(){
     initCanvas();
-    initBalls(50);
+    initBalls(40);
     window.requestAnimationFrame(render);
 }
 goMovie();
