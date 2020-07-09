@@ -332,6 +332,7 @@ ul.thd li:nth-child(3):hover span{
 
   .myImage-T {
   	grid-column: 1 !important;
+	  margin-bottom: 40px;
   }
 
   .myQual {
