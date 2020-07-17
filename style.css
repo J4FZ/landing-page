@@ -215,7 +215,6 @@ grid-column: 2;
 	transform: scale(1.04);
 }
 .desc{
-top: 50%;
 transform: translateY(-50%);
 position: relative;
 }
