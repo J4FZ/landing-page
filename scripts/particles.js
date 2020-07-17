@@ -251,7 +251,7 @@ function goMovie(){
          
          initBalls(20)
          
-               {
+      }
     window.requestAnimationFrame(render);
 }
 goMovie();
