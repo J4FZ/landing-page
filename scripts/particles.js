@@ -242,7 +242,9 @@ window.addEventListener('resize', function(e){
 
 function goMovie(){
     initCanvas();
+   //if canvas size of computer/large tablet
     initBalls(40);
+   //else half amount of balls for mobile/tablet
     window.requestAnimationFrame(render);
 }
 goMovie();
