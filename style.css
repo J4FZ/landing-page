@@ -163,7 +163,9 @@ align-items: center;
 .myImage{
   grid-column: 1;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: fill;
+    height: 325px;
+    width: 325px;
     max-height: 325px;
     max-width: 325px;
 }
