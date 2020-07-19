@@ -349,7 +349,7 @@ ul.thd li:nth-child(3):hover span{
   }
 	
   ul.thd li {
-  margin: 0px 15px;
+  margin: 0px 15px !important;
 }
 }
 
@@ -363,16 +363,6 @@ ul.thd li:nth-child(3):hover span{
   60% {
     transform: translateY(-15px);
   }
-}
-
-@keyframes shadow-pulse
-{
-     0% {
-          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
-     }
-     100% {
-          box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
-     }
 }
 
 @keyframes load{
