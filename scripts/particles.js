@@ -274,7 +274,7 @@ $(document).ready(function() {
             }
             
         }); 
-       $('.hidemeport').each( function(i)){
+       $('.hidemeport').each( function(i){
                              var bottom_of_object = $(this).position().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
