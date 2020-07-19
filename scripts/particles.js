@@ -275,7 +275,7 @@ $(document).ready(function() {
             
         }); 
        $('.hidemeport').each( function(i){
-                             var bottom_of_object = ($(this).position().top + $(this).outerHeight()) * 0.2;
+                             var bottom_of_object = ($(this).position().top + $(this).outerHeight()) * 0.8;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             /* If the top 20% of the object is completely visible in the window, fade it it */
