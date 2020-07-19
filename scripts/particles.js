@@ -251,6 +251,10 @@ const goToByScroll = (id) => {
     $('html,body').animate({scrollTop: $("#"+id).offset().top},'normal');
 }
 
+
+$(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
 $(document).ready(function() {
     
     /* Every time the window is scrolled ... */
