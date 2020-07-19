@@ -245,7 +245,7 @@ ul.thd li {
   list-style: none;
   width: 60px;
   height: 60px;
-  margin: 0px 20px;
+  margin: 0px 30px;
 }
 ul.thd li:before{
   content: '';
