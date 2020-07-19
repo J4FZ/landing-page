@@ -101,6 +101,9 @@ margin-bottom: 20px;
 .hideme{
 opacity:0;
 }
+.hidemeport{
+opacity:0;	
+}
 .text-center {
 	text-align: center;
 }
