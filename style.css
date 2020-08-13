@@ -52,6 +52,25 @@ p {
 	font-size: 1.2em;
 }
 
+.main-nav {
+  display: inline-block;
+	list-style: none;
+	margin: 0;
+	font-size: 1.2em;
+	z-index: 9999;
+	width: 100%;
+	background: none;
+	position: absolute;
+	overflow: auto;
+}
+.main-nav li{
+  float:left;
+}
+.main-nav a{
+	color: white;
+}
+
+
 footer{
   color: white;
   background-color: #161616;
@@ -105,22 +124,6 @@ opacity:0;
 .text-center {
 	text-align: center;
 }
-
-/*.main-nav {
-  display: inline-block;
-	list-style: none;
-	margin: 0;
-	font-size: 1.2em;
-	z-index: 9999;
-	width: 100%;
-	background: none;
-	position: absolute;
-	overflow: auto;
-}
-
-.main-nav a{
-	color: white;
-}*/
 
 .container {
 	height: 110vh;
@@ -322,11 +325,10 @@ ul.thd li:nth-child(3):hover span{
 }
 
 @media only screen and (max-width: 600px) {
-    /*.main-nav {
-        font-size: 1.0em;
+   .main-nav {
         padding: 0;
         background:none;
-    }*/
+    }
   
   .aboutme {
     display: grid;
