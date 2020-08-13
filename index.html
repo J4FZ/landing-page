@@ -10,12 +10,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-	<!--<nav class="nav zone">
+	<nav class="nav zone">
 		<ul class="main-nav">
-			<li><a class="link" href="javascript:goToByScroll('aboutme')">About Me</a></li>
+			<li><a class="link" href="javascript:goToByScroll('mysummary')">My Summary</a></li>
+			<li><a class="link" href="javascript:goToByScroll('myqualifications')">My Qualifications</a></li>
 			<li><a class="link" href="javascript:goToByScroll('myportfolio')">My Portfolio</a></li>
 		</ul>
-	</nav>-->
+	</nav>
 		
 	<div class="container zone">
 			<canvas id="particles">
@@ -51,11 +52,11 @@
 <div class="arrow">
 	<p>See some of my info below</p>
 	<div class="bounce">
-  <a href="javascript:goToByScroll('aboutme')"><span class="fa fa-arrow-down fa-2x"></span></a>
+  <a href="javascript:goToByScroll('mysummary')"><span class="fa fa-arrow-down fa-2x"></span></a>
 </div>
 </div>
 	</div>
-	<div id="aboutme" class="aboutme zone diagonal">
+	<div id="mysummary" class="aboutme zone diagonal">
 		<div class="diagwr hideme">
 			<img class="myImage" src="./img/me.jpg">
 		</div>
@@ -71,13 +72,21 @@
 
 		</div>
 
-		<div class="aboutme zone diagonal-t">
+		<div id="myqualifications" class="aboutme zone diagonal-t">
 			
 			<div class="myQual diagwr hideme">
 			<h3 class="text-center">My Qualifications</h3>
-			<p class="">2:1 BSc Computing (Hons) - <strong>Achieved November 2019</strong></p>
-			<p>AWS Certified Associate Developer - <strong>Currently Studying</strong></p>
-			<p class="p-end">MSc Advanced Security and Digital Forensics - <strong>Near Future (starting January 2021)</strong></p>
+
+			<h4>Achieved</h4>
+  			<p class="p-end">2:1 BSc Computing (Hons)</p>
+  			<p class="info"></p>
+
+			<h4>In Progress</h4>
+  			<p class="p-end">AWS Certified Associate Developer</p>
+
+			<h4>Planned</h4>
+  			<p>MSc Advanced Security and Digital Forensics - <strong>Starting January 2021</strong></p>
+  			<p class="p-end">(ISC)² Certified Information Systems Security Professional (CISSP)</p>
 			</div>
 
 			<div class="myImage-T diagwr hideme">
@@ -87,7 +96,7 @@
 
 		</div>
 
-	<div class="portfolio zone diagonal">
+	<div id="myportfolio" class="portfolio zone diagonal">
 		<div class="hideme">
 		<h3 class="text-center diagwr">My Portfolio - 🚧 SECTION TO BE REDESIGNED 🚧</h3>
 			<div class="portfolio-grid-wrapper diagwr">
@@ -95,10 +104,10 @@
 			<div class="box zone zoom"><a href="https://github.com/J4FZ/CMP304-AI-Human-Emotion-Recognition" target="blank_"><h3>Human Emotion Recognition (Artificial Intelligence)</h3><img src="./img/placeholder.png" alt="Portfolio 2"></a></div>
 			<div class="box zone zoom"><a href="#" target="_blank"><h3>SmartBrain (No link yet, in progress)</h3><img src="./img/placeholder.png" alt="Portfolio 3"></a></div>
 			<div class="box zone zoom"><a href="#" target="_blank"><h3>BlackJack (JS, No link yet, in progress)</h3><img src="./img/placeholder.png" alt="Portfolio 4"></a></div>
-			<div class="box zone zoom"><a href="https://github.com/J4FZ/Blackjack" target="_blank"><h3>Example Portfolio Item 5</h3><img src="./img/placeholder.png" alt="Portfolio 5"></a></div>
-			<div class="box zone zoom"><a href="https://github.com/J4FZ/Blackjack" target="_blank"><h3>Example Portfolio Item 6</h3><img src="./img/placeholder.png" alt="Portfolio 6"></a></div>
-			<div class="box zone zoom"><a href="https://github.com/J4FZ/Blackjack" target="_blank"><h3>Example Portfolio Item 7</h3><img src="./img/placeholder.png" alt="Portfolio 7"></a></div>
-			<div class="box zone zoom"><a href="https://github.com/J4FZ/Blackjack" target="_blank"><h3>Example Portfolio Item 8</h3><img src="./img/placeholder.png" alt="Portfolio 8"></a></div>
+			<div class="box zone zoom"><a href="#" target="_blank"><h3>Calorie Tracking site (No link yet, in progress)</h3><img src="./img/placeholder.png" alt="Portfolio 5"></a></div>
+			<div class="box zone zoom"><a href="#" target="_blank"><h3>To-Do List (A portfolio staple)</h3><img src="./img/placeholder.png" alt="Portfolio 6"></a></div>
+			<div class="box zone zoom"><a href="#" target="_blank"><h3>Example Portfolio Item 7</h3><img src="./img/placeholder.png" alt="Portfolio 7"></a></div>
+			<div class="box zone zoom"><a href="#" target="_blank"><h3>Example Portfolio Item 8</h3><img src="./img/placeholder.png" alt="Portfolio 8"></a></div>
 		</div>
 		</div>
 	</div>
