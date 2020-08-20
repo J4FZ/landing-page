@@ -236,7 +236,7 @@ position: relative;
 
 .arrow {
   text-align: center;
-  margin: 8% 0;
+  /*margin: 8% 0;*/
   position: absolute;
   bottom: 0;
 }
