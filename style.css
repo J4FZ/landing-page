@@ -52,7 +52,7 @@ p {
 	font-size: 1.2em;
 }
 
-.main-nav {
+/*.main-nav {
   display: inline-block;
 	list-style: none;
 	margin: 0;
@@ -68,7 +68,7 @@ p {
 }
 .main-nav a{
 	color: white;
-}
+}*/
 
 
 footer{
@@ -334,10 +334,10 @@ ul.thd li:nth-child(3):hover span{
 }
 
 @media only screen and (max-width: 600px) {
-   .main-nav {
+  /* .main-nav {
         padding: 0;
         background:none;
-    }
+    }*/
   
   .aboutme {
     display: grid;
