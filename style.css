@@ -709,6 +709,7 @@ grid-column: 2;
 position: absolute;
 top:25vh;
 text-align: center;
+	z-index:999;
 }
 
 .desc h1 {
