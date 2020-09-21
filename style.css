@@ -888,7 +888,7 @@ ul.thd li:nth-child(3):hover span{
   left: 45vw !important;
 }
 .mountain-2-shadow{
-  left: calc(45vw+130px);
+  left: calc(45vw+130px) !important;
 }
 }
 
