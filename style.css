@@ -518,7 +518,7 @@ position: absolute;
     }
 
 100% {
-   transform: translate(calc(100vw + 100px),0);
+   transform: translate(100vw,0);
     }
 }
 
@@ -540,7 +540,7 @@ position: absolute;
     }
 
 100% {
-   transform: translate(calc(-100vw - 100px),0);
+   transform: translate(-100vw,0);
     }
 }
 
