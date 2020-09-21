@@ -61,7 +61,12 @@ footer{
   position: relative;
   bottom: 0;
 }
-
+footer a{
+  color: yellow;
+}
+footer a:visited{
+  color: yellow;
+}
 
 .sky {
   background: linear-gradient(180deg, #57c1eb 0%, #246fa8 100%);
@@ -733,6 +738,7 @@ ul.thd {
    display: flex;
    transform: rotate(-0deg) skew(0deg);
    transform-style: preserve-3d;
+   z-index: 99;
 }
 ul.thd li {
   position: relative;
@@ -751,6 +757,7 @@ ul.thd li:before{
   background: #2a2a2a;
   transform-origin: top;
   transform: skewX(-41deg);
+  opacity: 0.7;
 }
 ul.thd li:after{
   content: '';
@@ -762,6 +769,7 @@ ul.thd li:after{
   background: #2a2a2a;
   transform-origin: right;
   transform: skewY(-49deg);
+  opacity: 0.7;
 }
 ul.thd li span{
   position: absolute;
