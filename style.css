@@ -885,10 +885,10 @@ ul.thd li:nth-child(3):hover span{
 }
 
 .mountain-2{
-  left: 45vw !important;
+  left: 40vw !important;
 }
 .mountain-2-shadow{
-  left: calc(45vw + 130px) !important;
+  left: calc(40vw + 130px) !important;
 }
 }
 
