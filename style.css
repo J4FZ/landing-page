@@ -883,6 +883,13 @@ ul.thd li:nth-child(3):hover span{
 .mountain-1-shadow {
   left: 130px !important;
 }
+
+.mountain-2{
+  left: 45vw !important;
+}
+.mountain-2-shadow{
+  left: calc(45vw+130px);
+}
 }
 
 @keyframes bounce {
