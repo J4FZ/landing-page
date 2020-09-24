@@ -216,7 +216,7 @@ height: 10px;
   width:2px;
   background-color: yellow;
   z-index: 20;
-  animation: bruh 2s linear infinite ;
+  animation: flag-wave 2s linear infinite ;
   animation-delay: 0.25s;
 }
 
@@ -405,9 +405,6 @@ height: 10px;
   background-color: #fff;
 }
 
-
-
-
 .sun {
   position: absolute;
   width: 50px;
@@ -422,27 +419,6 @@ height: 10px;
      0 0 0 80px #ffdd0020,
       0 0 0 100px #ffdd0010;
       animation: sunshine 2s 2s linear infinite;
-}
-
-@keyframes sunshine {
-  0% {
-      box-shadow: 
-    0 0 0 0 #FFDE0080,
-    0 0 0 20px #FFDE0080,
-    0 0 0 40px #FFDE0040,
-    0 0 0 60px #FFDE0020,
-    0 0 0 80px #FFDE0010,
-    0 0 40px 100px #FFDE0010;
-  }
-  100% {
-    box-shadow: 
-    0 0 0 20px #FFDE0080,
-    0 0 0 40px #FFDE0040,
-    0 0 0 60px #FFDE0020,
-    0 0 0 80px #FFDE0010,
-    0 0 0 100px #FFDE0000,
-    0 0 40px 100px #FFDE0010;
-  }
 }
 
 .ground {
@@ -475,79 +451,6 @@ position: absolute;
   right: -50px;
   bottom: 0;
   z-index: 30;
-}
-
-
-@keyframes bruh {
-0% {
-   transform: translateY(0px);
-    }
-
-25% {
-   transform: translateY(0.25px);
-    }
-
-50% {
-   transform: translateY(0px);
-    }
-
-75% {
-   transform: translateY(-0.25px);
-    }
-
-100% {
-   transform: translateY(0px);
-    }
-}
-
-@keyframes move-r {
-  0% {
-   transform: translate(0vw,0);
-    }
-
-25% {
-   transform: translate(25vw,0);
-    }
-
-50% {
-  transform: translate(50vw,0);
-    }
-
-75% {
-   transform: translate(75vw,0);
-    }
-
-100% {
-   transform: translate(100vw,0);
-    }
-}
-
-@keyframes move-l {
-  0% {
-   transform: translate(-0vw,0);
-    }
-
-25% {
-   transform: translate(-25vw,0);
-    }
-
-50% {
-  transform: translate(-50vw,0);
-    }
-
-75% {
-   transform: translate(-75vw,0);
-    }
-
-100% {
-   transform: translate(-100vw,0);
-    }
-}
-
-@keyframes fly-cycle{
-  100%{
-    background-position: -900px 0;
-  }
 }
 
 #particles{
@@ -596,23 +499,7 @@ opacity:0;
 	text-align: center;
 }
 
-.main-nav {
-  display: inline-block;
-	list-style: none;
-	margin: 0;
-	font-size: 1.2em;
-	z-index: 9999;
-	width: 100%;
-	background: none;
-	position: absolute;
-	overflow: auto;
-}
-.main-nav li{
-  float:left;
-}
-.main-nav a{
-	color: white;
-}
+
 
 .container {
 	height: 110vh;
@@ -720,19 +607,6 @@ text-align: center;
   padding-bottom: 10px;
 }
 
-
-.arrow {
-  text-align: center;
-  margin: 8% 0;
-  position: absolute;
-  bottom: 0;
-}
-
-.arrow p {
-  margin-bottom: 40px;
-  color: white;
-}
-
 ul.thd {
    position: relative;
    display: flex;
@@ -816,12 +690,6 @@ ul.thd li:nth-child(3):hover span{
   background: #f7797d !important;
 }
 
-.bounce {
-	color: white;
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
 
 .link{
   position: relative;
@@ -885,23 +753,11 @@ ul.thd li:nth-child(3):hover span{
 }
 
 .mountain-2{
-  left: 37.5vw !important;
+  left: 32.5vw !important;
 }
 .mountain-2-shadow{
-  left: calc(37.5vw + 130px) !important;
+  left: calc(32.5vw + 130px) !important;
 }
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
 }
 
 @keyframes load{
@@ -922,5 +778,98 @@ ul.thd li:nth-child(3):hover span{
 @-o-keyframes load{
   from {
     width: 0%
+  }
+}
+
+@keyframes flag-wave {
+0% {
+   transform: translateY(0px);
+    }
+
+25% {
+   transform: translateY(0.25px);
+    }
+
+50% {
+   transform: translateY(0px);
+    }
+
+75% {
+   transform: translateY(-0.25px);
+    }
+
+100% {
+   transform: translateY(0px);
+    }
+}
+
+@keyframes move-r {
+  0% {
+   transform: translate(0vw,0);
+    }
+
+25% {
+   transform: translate(25vw,0);
+    }
+
+50% {
+  transform: translate(50vw,0);
+    }
+
+75% {
+   transform: translate(75vw,0);
+    }
+
+100% {
+   transform: translate(100vw,0);
+    }
+}
+
+@keyframes move-l {
+  0% {
+   transform: translate(-0vw,0);
+    }
+
+25% {
+   transform: translate(-25vw,0);
+    }
+
+50% {
+  transform: translate(-50vw,0);
+    }
+
+75% {
+   transform: translate(-75vw,0);
+    }
+
+100% {
+   transform: translate(-100vw,0);
+    }
+}
+
+@keyframes fly-cycle{
+  100%{
+    background-position: -900px 0;
+  }
+}
+
+@keyframes sunshine {
+  0% {
+      box-shadow: 
+    0 0 0 0 #FFDE0080,
+    0 0 0 20px #FFDE0080,
+    0 0 0 40px #FFDE0040,
+    0 0 0 60px #FFDE0020,
+    0 0 0 80px #FFDE0010,
+    0 0 40px 100px #FFDE0010;
+  }
+  100% {
+    box-shadow: 
+    0 0 0 20px #FFDE0080,
+    0 0 0 40px #FFDE0040,
+    0 0 0 60px #FFDE0020,
+    0 0 0 80px #FFDE0010,
+    0 0 0 100px #FFDE0000,
+    0 0 40px 100px #FFDE0010;
   }
 }
